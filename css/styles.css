@@ -5,5 +5,21 @@ dialog
 {
   border: none;
 }
-.button_yes {}
-.button_cancel {}
+#template_dialog
+{
+  width:50%;
+  height:50%;
+}
+.center_text {
+  margin: auto;
+  text-align: center;
+  width: 50%;
+}
+.button_row {
+  text-align: center;
+  margin:5%
+}
+.button_yes {
+  margin:5%
+}
+.button_cancel {margin:5%}
