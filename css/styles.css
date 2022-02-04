@@ -1,7 +1,9 @@
 body {
-  background-color: #7F7F7F;
+  background-color: #EFEFEF;
 }
 dialog
 {
   border: none;
 }
+.button_yes {}
+.button_cancel {}
