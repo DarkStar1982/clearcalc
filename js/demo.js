@@ -1,4 +1,4 @@
-function show_dialog(element_ref, dialog_ref, text_message)
+function show_dialog(element_ref, dialog_ref, text_message, update_page_function)
 {
   var prev_background = document.body.style.background;
   document.body.style.background = "#7F7F7F";
@@ -8,14 +8,14 @@ function show_dialog(element_ref, dialog_ref, text_message)
   button_yes.addEventListener('click', function() {
         document.body.style.background = prev_background;
         dialog.close();
-        update_page(element_ref, text_message+" 'Yes'");
+        update_page_function(element_ref, text_message+" 'Yes'");
       });
   var dialog = dialog_ref;
 
   button_cancel.addEventListener('click', function() {
         document.body.style.background = prev_background;
         dialog.close();
-        update_page(element_ref, text_message+" 'Cancel'");
+        update_page_function(element_ref, text_message+" 'Cancel'");
       });
   var dialog = document.getElementById('template_dialog');
 
